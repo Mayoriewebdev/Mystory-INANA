@@ -65,6 +65,46 @@ body {
   display: block;
 }
 
+
+.story-contents {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* pushes to LEFT */
+  align-items: flex-start;
+}
+
+.story-contents img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  display: block;
+  margin-top: -230px;
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  .story-contents {
+    justify-content: center; /* center on tablets */
+  }
+
+  .story-contents img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-contents {
+    justify-content: center; /* center on mobile */
+  }
+
+  .story-contents img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
 /* DESKTOP POLISH */
 @media (min-width: 1024px) {
   .story-section {
